@@ -1,9 +1,10 @@
 {
   "name": "clothesbackend",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "scripts": { 
     "start": "nodemon index.js"
   },
   "repository": {
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/mar4444/clothesBackend#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
