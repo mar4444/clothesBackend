@@ -3,6 +3,7 @@ import sequelize from "./config/db.js";
 import authRoute from "./routes/auth.js";
 import userRoutes from "./routes/user.js";
 import authRoutes from "./routes/login.js";
+import authPost from "./routes/post.js";
 
 const app = express();
 app.use(express.json());
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use("/api", authRoute);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/", authPost);
 
 const PORT = process.env.PORT || 5000;
 
